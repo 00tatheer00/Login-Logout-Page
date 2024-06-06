@@ -1,9 +1,11 @@
+// src/LoggedIn.jsx
 import React from 'react';
-function LoggedIn(props) {
+
+function LoggedIn({ onLogout }) {
   return (
-    <div className="logged-in">
-      <h2>Welcome, you are logged in!</h2>
-      <button onClick={props.onLogout}>Logout</button>
+    <div>
+      <h1>You are logged in!</h1>
+      <button onClick={onLogout}>Logout</button>
     </div>
   );
 }
